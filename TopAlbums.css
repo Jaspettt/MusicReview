@@ -1,0 +1,395 @@
+* {
+   margin: 0;
+	padding: 0;
+   box-sizing: border-box;
+ }
+body {
+   font-family: 'Arial', sans-serif;
+   font-size: 16px; 
+   position: relative; 
+   height: auto;
+   background-color: #D6DADA; /* Light gray background color for the body */
+   color: #333333; /* Dark gray text color */
+   margin: auto;
+   
+}
+.nav-link {
+   color: #ffffff;
+}
+.header {
+   background-color: #798686; 
+   text-align: center;
+   padding: 20px 0;
+}
+ 
+.header h1 {
+   font-size: 30px;
+   font-weight: bold;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ 
+.header p {
+   font-size: 16px;
+   
+}
+.line {
+   margin-left: 10%;
+   margin-right: 10%;
+   height: 10px;
+   position: relative;
+   border: 1px solid #c5cae9;
+   background-color: black;
+}
+.h1Name {
+   padding: 0 0 50px 10px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header-review {
+   background: rgba(34, 28, 73, 0.9);
+   padding-left: 5px;
+   font-style: italic;
+   font-size: 1.5em;
+   color: #ff4081;
+   
+}
+.grid {
+   display: grid;
+   grid-template-columns: 1.75fr 1fr;
+   grid-column-gap: 5em;
+   grid-row-gap: 2em;
+   grid-template-rows: repeat(50, 1fr);
+   margin: 0 2% 0 2%;
+   border: solid red;
+}
+.grid-item {
+   background-color: #ffffff;
+   border: 1px solid #F4C430;
+   border-radius: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
+}
+.grid-item1 {
+   grid-column-start: 1;
+   grid-row: 1 / 8;
+   background-color: rgba(241, 251, 251, 0.1)
+}
+.grid-item2 {
+   grid-column-start: 2;
+   grid-row: 2 / end;
+
+}
+.grid-item3 {
+   grid-column-start: 1;
+   grid-row: 8 / 15;
+   background-color: rgba(241, 251, 251, 0.1)
+}
+.grid-item5 {
+   grid-column-start: 1;
+   grid-row: 15 / 22;
+   background-color: rgba(241, 251, 251, 0.1)
+}
+.grid-item6 {
+   grid-column-start: 1;
+   grid-row: 22 / 29;
+   background-color: rgba(241, 251, 251, 0.1)
+}
+.grid-item7 {
+   grid-column-start: 1;
+   grid-row: 29 / 36;
+   background-color: rgba(241, 251, 251, 0.1)
+}
+.grid-item8 {
+   grid-column-start: 1;
+   grid-row: 36 / 43;
+   background-color: rgba(241, 251, 251, 0.1)
+}
+.grid-item9 {
+   grid-column-start: 1;
+   grid-row: 43 / 50;
+   background-color: rgba(241, 251, 251, 0.1)
+}
+
+.genre {
+   display: flex;
+}
+.genreImage {
+   padding: 20px;
+   height: 200px;
+   width: 200px;
+   border: solid;
+}
+.genreName {
+   font-family: 'Courier New', Courier, monospace;
+   
+   padding: 10px 0 0 50px;
+  
+}
+.descr{
+   padding-left: 50px;
+   align-self: center;
+   justify-self: center;
+   font-style: italic;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   justify-content: stretch;
+}
+.class1:hover .class2 {
+   right: -22px;
+   opacity: 0.99;
+   }
+   .class1 {
+   position: relative;
+   cursor: help;
+   }
+   .class1 .class2 {
+   background-color: #888;
+   box-shadow: 4px 4px 6px aqua;
+   right: 9998px;
+   width: 200px;
+   margin-right: -220px;
+   opacity: 0;
+   width: 200px;
+   padding: 5px;
+   color: #fff;
+   position: absolute;
+   top: -11px;
+   }
+   .class1:hover .class2:BEFORE {
+   height: 0;
+   margin-top: -8px;
+   position: absolute;
+   top: 50%;
+   left: -16px;
+   border: 8px solid transparent;
+   content: ' ';
+   width: 0;
+   border-right-color: #333;
+   top: 50%;
+   left: -16px;
+   }
+   
+/* Footer */
+.app {
+	background: #fff;
+	width: 90%;
+	max-width: 600px;
+	margin: 0 auto 1rem;
+	border-radius: 10px;
+	padding: 30px; 
+}
+.app h2{
+	font-weight: 25px;
+	color: #001e4d;
+	font-weight: 600;
+	border-bottom: 1px solid #333;
+	
+}
+
+.quiz h3 {
+	font-size: 18px;
+	color: #001e4d;
+}
+.btnquiz {
+	background: #fff;
+	color: #222;
+	font-weight: 500;
+	width: 100%;
+	border: 1px solid #222;
+	padding: 10px;
+	margin: 10px 0;
+	text-align: left;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.btnquiz:hover:not([disabled]){
+	background: #222;
+	color: #fff;
+}
+.btnquiz:disabled {
+	cursor: no-drop;
+}
+#next-btnquiz {
+	background: #001e4d;
+	color: #fff;
+	font-weight: 500;
+	width: 150px;
+	border: 0;
+	padding: 10px;
+	margin: 0 auto 0;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+}
+.correct {
+	background-color: greenyellow;
+}
+.incorrect {
+	background-color: red;
+}
+/* Puzzle */
+#board {
+   width: 400px;
+   height: 400px;
+   border: 2px solid purple;
+
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#board img {
+   width: 78px;
+   height: 78px;
+   border: 0.5px solid lightblue;
+}
+
+
+#pieces {
+   width: 1040px;
+   height: 160px;
+   border: 2px solid purple;
+
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#pieces img {
+   width: 78px;
+   height: 78px;
+   border: 0.5px solid lightblue;
+}
+/* Add your other styles here */
+
+/* Styling for the quiz pop-up container */
+.quiz-container {
+   display: none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   z-index: 1000;
+ }
+ 
+ /* Styling for the close button */
+
+.close-btn {
+   display: flex;
+   color: #aaaaaa;
+   justify-content: flex-start;
+   font-size: 28px;
+   font-weight: bold;
+   background-color: white;
+}
+ 
+.close-btn:hover,
+.close-btn:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+ /* Add any other styles as needed */
+ 
+/* footer */
+.footer {
+   padding-top: 2%;
+	background-color: #181A1A;
+   color: #ffffff;
+}
+
+.footer h4 {
+	color: #ccc;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-bottom: 1px solid #666;
+	padding-bottom: 3px;
+}
+
+.footer a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+.footer a:hover {
+	color: #FFD700;
+	text-decoration: underline;
+}
+#myBtn {
+   background-color: #181A1A;
+   color: #fff;
+   border: none;
+   text-decoration: none;
+	transition: all .3s;
+   cursor: pointer;
+}
+#myBtn:hover {
+   color: #FFD700;
+	text-decoration: underline;
+}
+#openQuizBtn {
+   background-color: #181A1A;
+   color: #fff;
+   border: none;
+   text-decoration: none;
+	transition: all .3s;
+   cursor: pointer;
+}
+#openQuizBtn:hover {
+   color: #FFD700;
+	text-decoration: underline;
+}
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+ 
+ /* Modal Content */
+.modal-content {
+   background-color: #fefefe;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%;
+}
+ 
+ /* The Close Button */
+.close {
+   display: flex;
+   color: #aaaaaa;
+   justify-content: flex-end;
+   font-size: 28px;
+   font-weight: bold;
+}
+ 
+.close:hover,
+.close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+.footer a, .footer li {
+	color: #c8c8c8;
+}
+
+.footer li a {
+	display: block;
+}
+
+.footer-icons a {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 20px;
+}

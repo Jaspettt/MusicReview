@@ -1,0 +1,436 @@
+* {
+   margin: 0;
+	padding: 0;
+   box-sizing: border-box;
+ }
+body {
+   font-family: 'Arial', sans-serif;
+   font-size: 16px; 
+   position: relative; 
+   height: auto;
+   background-color: #D6DADA; /* Light gray background color for the body */
+   color: #333333; /* Dark gray text color */
+   margin: auto;
+   
+}
+.nav-link {
+   color: #ffffff;
+}
+.header {
+   background-color: #798686; 
+   text-align: center;
+   padding: 20px 0;
+}
+ 
+.header h1 {
+   font-size: 30px;
+   font-weight: bold;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ 
+.header p {
+   font-size: 16px;
+   
+}
+.line {
+   margin-left: 10%;
+   margin-right: 10%;
+   height: 10px;
+   position: relative;
+   border: 1px solid #c5cae9;
+   background-color: black;
+}
+.header-review {
+   background: rgba(34, 28, 73, 0.9);
+   padding-left: 5px;
+   font-style: italic;
+   font-size: 1.5em;
+   color: #ff4081;
+   
+}
+.grid {
+   display: grid;
+   grid-template-columns: 1.75fr 1fr;
+   grid-column-gap: 5em;
+   grid-row-gap: 2em;
+   grid-template-rows: repeat(50, 1fr);
+   margin: 0 2% 0 2%;
+  
+   
+
+}
+.grid-item {
+   background-color: #ffffff;
+   border: 1px solid #F4C430;
+   border-radius: 10px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+}
+.grid-item1 {
+   grid-column-start: 1;
+   grid-row: 1 / 23 span;
+}
+.grid-item2 {
+   grid-column-start: 2;
+   grid-row: 2 / 20;
+   opacity: 0.2;
+}
+.grid-item2:hover {
+   transition: ease-in 0.7s;
+   opacity: 1;
+}
+.carousel-image {
+   height: 100vh; /* Set the height of the image to the full viewport height */
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   
+ }
+.grid-item3 {
+   grid-column-start: 1;
+   grid-row: 26 / 48;
+}
+.grid-item4{
+   grid-column-start: 2;
+   grid-row: 20 / 48;
+}
+.grid-item5 {
+   grid-column: 1 / end;
+}
+
+.audio-player {
+   width: 90%;
+   background-color: rgba(40, 9, 241, 0.7);
+   border-radius: 10px;
+   margin: 30px auto;
+   padding: 20px;
+  
+}
+.audio-controls {
+   display: flex;
+   flex-direction: column;
+}
+
+#songTitle {
+   font-size: 18px;
+
+   margin: 0;
+   text-align: center;
+   font-weight: bold;
+}
+.newSongDetail {
+   display: flex;
+   justify-content: space-between;
+}
+.artistName {
+   font-size: max(1em);
+   font-style: italic;
+   padding-right: 3%;
+}
+.dropDate {
+   font-size: max(1em);
+   font-style: italic;
+}
+.time-display{
+   display: flex;
+   margin-bottom: 5px;
+   justify-content: space-between;   
+}
+
+.progress-container {
+   width: 100%;
+   height: 8px;
+   background-color: #f2f2f2;
+   border-radius: 4px;
+}
+ 
+.progress-bar {
+   height: 100%;
+   width: 0;
+   background-color: #007BFF;
+   border-radius: 4px;
+}
+ 
+.control-buttons {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 10px;
+}
+ 
+#playButton, #pauseButton {
+   background-color: #007BFF;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   padding: 8px 16px;
+   cursor: pointer;
+}
+ 
+#playButton:hover, #pauseButton:hover {
+   background-color: #181919;
+}
+ 
+.volume-control {
+   width: 100px;
+   margin: 0 10px;
+}
+.container-review {
+   display: flex;
+}
+
+.img-review {
+   padding: 20px 0px 0px 32px;
+   flex: 1;
+   border-radius: 10%;
+}
+.desc-review {
+   flex: 1;
+   padding-top: 20px;
+   padding-right: 10%;
+   
+}
+.user-icon {
+   height: 20px;
+   width: 20px;
+}
+.left-side {
+   padding-top: 20px;
+
+}
+.left-side > h5{
+   font-weight: bolder;
+   color: rgba(32, 31, 31, 0.8);
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.under-revimage {
+   font-family: 'Courier New', Courier, monospace;
+   padding-right: 10px;
+}
+
+.app {
+	background: #fff;
+	width: 90%;
+	max-width: 600px;
+	margin: 0 auto 1rem;
+	border-radius: 10px;
+	padding: 30px; 
+}
+.app h2{
+	font-weight: 25px;
+	color: #001e4d;
+	font-weight: 600;
+	border-bottom: 1px solid #333;
+	
+}
+
+.quiz h3 {
+	font-size: 18px;
+	color: #001e4d;
+}
+.btnquiz {
+	background: #fff;
+	color: #222;
+	font-weight: 500;
+	width: 100%;
+	border: 1px solid #222;
+	padding: 10px;
+	margin: 10px 0;
+	text-align: left;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.btnquiz:hover:not([disabled]){
+	background: #222;
+	color: #fff;
+}
+.btnquiz:disabled {
+	cursor: no-drop;
+}
+#next-btnquiz {
+	background: #001e4d;
+	color: #fff;
+	font-weight: 500;
+	width: 150px;
+	border: 0;
+	padding: 10px;
+	margin: 0 auto 0;
+	border-radius: 4px;
+	cursor: pointer;
+	display: none;
+}
+.correct {
+	background-color: greenyellow;
+}
+.incorrect {
+	background-color: red;
+}
+/* Puzzle */
+#board {
+   width: 400px;
+   height: 400px;
+   border: 2px solid purple;
+
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#board img {
+   width: 78px;
+   height: 78px;
+   border: 0.5px solid lightblue;
+}
+
+
+#pieces {
+   width: 1040px;
+   height: 160px;
+   border: 2px solid purple;
+
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#pieces img {
+   width: 78px;
+   height: 78px;
+   border: 0.5px solid lightblue;
+}
+/* Add your other styles here */
+
+/* Styling for the quiz pop-up container */
+.quiz-container {
+   display: none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   z-index: 1000;
+ }
+ 
+ /* Styling for the close button */
+
+.close-btn {
+   display: flex;
+   color: #aaaaaa;
+   justify-content: flex-start;
+   font-size: 28px;
+   font-weight: bold;
+   background-color: white;
+}
+ 
+.close-btn:hover,
+.close-btn:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+ /* Add any other styles as needed */
+ 
+/* footer */
+.footer {
+   padding-top: 2%;
+	background-color: #181A1A;
+   color: #ffffff;
+}
+
+.footer h4 {
+	color: #ccc;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-bottom: 1px solid #666;
+	padding-bottom: 3px;
+}
+
+.footer a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+.footer a:hover {
+	color: #FFD700;
+	text-decoration: underline;
+}
+#myBtn {
+   background-color: #181A1A;
+   color: #fff;
+   border: none;
+   text-decoration: none;
+	transition: all .3s;
+   cursor: pointer;
+}
+#myBtn:hover {
+   color: #FFD700;
+	text-decoration: underline;
+}
+#openQuizBtn {
+   background-color: #181A1A;
+   color: #fff;
+   border: none;
+   text-decoration: none;
+	transition: all .3s;
+   cursor: pointer;
+}
+#openQuizBtn:hover {
+   color: #FFD700;
+	text-decoration: underline;
+}
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+ 
+ /* Modal Content */
+.modal-content {
+   background-color: #fefefe;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%;
+}
+ 
+ /* The Close Button */
+.close {
+   display: flex;
+   color: #aaaaaa;
+   justify-content: flex-end;
+   font-size: 28px;
+   font-weight: bold;
+}
+ 
+.close:hover,
+.close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+.footer a, .footer li {
+	color: #c8c8c8;
+}
+
+.footer li a {
+	display: block;
+}
+
+.footer-icons a {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 20px;
+}
